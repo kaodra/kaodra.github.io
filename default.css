@@ -1,0 +1,164 @@
+body {
+	padding-top: 20px;
+	font-family: 'Share Tech Mono', monospace;
+	color: #2fff91;
+	text-shadow: 0 0 5px #2fff91;
+}
+
+p {
+	font-size: 20px;
+	padding-right: 200px;
+	padding-left: 200px;
+	text-align: justify;
+}
+
+img {
+	position: absolute;
+	object-fit: fill;
+	border-radius: 10px;
+}
+
+a {
+	padding: 10px;
+}
+
+hr {
+	border: 2px solid #2fff91;
+	filter: drop-shadow(0 0 5px #2fff91);
+	margin-top: 10px;
+}
+
+a:link {
+	color: #2fff91;
+	text-shadow: 0 0 15px #2fff91;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0f3422;
+	text-shadow: 0 0 15px #0f3422;
+}
+
+a:active {
+	color: #2fff91;
+	text-shadow: 0 0 15px #2fff91;
+}
+
+html {
+	background-color: rgb(16, 22, 11);
+}
+
+* {
+	margin: 0;
+}
+
+*::selection {
+	text-shadow: none;
+	background-color: green;
+	color: white;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	float: left;
+}
+
+.column-padded {
+	float: left;
+	padding-left: 20px;
+}
+
+#web-nav-pages {
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+}
+
+#web-nav-pages:hover {
+}
+
+#terminal-background {
+	height: 100%;
+	background: radial-gradient(
+		 #0f3422,
+		 black 90%
+	);
+	border-radius: 10px;
+}
+
+#terminal-crt {
+	height: 100%;
+	background: repeating-linear-gradient(
+		 transparent,
+		 transparent 3px,
+		 rgba(33, 109, 62, 0.10),
+		 rgba(33, 109, 62, 0.10) 5px
+	);
+	border-radius: 10px;
+}
+
+#initial-page-padding {
+	padding-top: 20px;
+}
+
+#pad-text {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#attempts {
+	width: 17px;
+	height: 17px;
+	background: #2fff91;
+	display: inline-block;
+	padding: 5px;
+	margin-top: 3px;
+	margin-left: 25px;
+	filter: drop-shadow(0 0 5px #2fff91);
+}
+
+#crt-line {
+	position: absolute;
+	width: 1000px;
+	height: 240px;
+	background: linear-gradient(transparent, rgba(33, 109, 62, 0.10) 120px);
+	animation: crt-pass 7s infinite;
+	animation-timing-function: linear;
+}
+
+#float-left {
+	float: left;
+}
+
+#terminal-bezel {
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 820px;
+	width: 1000px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgba(77, 78, 78, 0.123);
+	border-radius: 20px;
+}
+
+#terminal-container {
+	position: relative;
+	height: 820px;
+	width: 1000px;
+	overflow-y: hidden;
+}
+
+@keyframes crt-pass {
+	0% {
+		transform: translateY(-240px);
+		opacity: 1;
+	}
+	20%, 100% {
+		transform: translateY(960px);
+		opacity: 0;
+	}
+}
