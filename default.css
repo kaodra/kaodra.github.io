@@ -44,6 +44,11 @@ a:active {
 	text-shadow: 0 0 15px #2fff91;
 }
 
+a:visited {
+	color: #2fff91;
+	text-shadow: 0 0 15px #2fff91;
+}
+
 html {
 	background-color: rgb(16, 22, 11);
 }
